@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form -1</title>
+</head>
+<body>
+    <form action="main.java" method="get">
+        <label for="name">
+            Enter First Name:
+        </label>  
+        <input type="text" placeholder="Enter Your First Name" id="name" Value="Amol" name="firstName">
+        <br>
+        <br>
+        <label for="lname">
+            Enter Last Name:
+        </label>  
+        <input type="text" placeholder="Enter Your Last Name" id="lname"> 
+        <br>
+        <br>
+         <label for="password">
+            Enter Password:
+        </label>  
+            <input type="password" placeholder="Enter Your password" id="password" Value="" name="pass">
+        <br>
+          <br>
+        
+        <label for="emailid">Enter your Email ID
+            <input type="email" name="email" id="emailid">
+        </label>
+          <br>
+          <br>
+        <button type="submit">Submit</button>   
+        <button type="reset">Reset</button>   
+        <button type="button">Button</button>    
+        <br><br>
+        <input type="color" name="" id="">
+        <br><br>
+        <input type="date" id="myDate" onchange="formatDate()" />
+        <input type="time" name="" id="">
+        <input type="datetime-local" name="" id="">
+        <br><br>
+        <input type="file" name="" id="">
+        <br><br>
+        <input type="month" name="" id="">
+        <input type="week" name="" id="">
+        <br><br>
+        <input type="hidden" name="type" value="student">
+        <input type="search" name="" id="">
+        <br><br>
+        <input type="number" name="" id="">
+        <br><br>
+        <input type="url" name="" id="">
+        <br><br>
+        <textarea name="" id=""></textarea>
+        <br><br>
+        <input type="radio" name="gender" id="m" value="male"><label for="m">Male</label>
+        <input type="radio" name="gender" id="f" value="female"><label for="f">Female</label>
+        <input type="radio" name="gender" id="t" value="trans"><label for="t">Trans</label>
+        <br><br>
+        <input type="checkbox" name="clang" id="c" value="C-Lang"><label for="c">c</label>
+        <input type="checkbox" name="jlang" id="java" value="J-Lang"><label for="java">java</label>
+        <input type="checkbox" name="plang" id="python" value="P-Lang"><label for="python">python</label>
+        <br><br>
+        <label for="S_state">Choose your State</label>
+        <select name="state" id="S_state" multiple >
+            <option value="Select">Select</option>
+
+            <option value="MH">MH</option>
+            <option value="GJ">GJ</option>
+            <option value="RJ">RJ</option>
+            <option value="TN">TN</option>
+            <option value="PB">PB</option>
+            <option value="KL">KL</option>
+
+
+        </select>
+        <p id="formattedDate"></p>
+
+        <script>
+        function formatDate() {
+            const input = document.getElementById("myDate").value;
+            if (!input) return;
+            
+            const date = new Date(input); // input is in yyyy-mm-dd
+            const day = String(date.getDate()).padStart(2, '0');
+            const monthNames = ["Jan", "Feb", "Mar", "Apr", "May", "Jun",
+                                "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+            const month = monthNames[date.getMonth()];
+            const year = date.getFullYear();
+
+            const formatted = `${day}-${month}-${year}`;
+            document.getElementById("formattedDate").textContent = formatted;
+        }
+        </script>
+    </form>
+   
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Registration Form</h2>
+    <form action="main.py" method="get">
+        <div>
+            <label for="na">Name*:</label><input type="text" id="na" name="na" required minlength="6" maxlength="15">
+        </div>
+        <br>
+         <div>
+            <label for="age">Age*:</label><input type="number" id="age" name="age" required min="18" max="50">
+        </div>
+        <br>
+        <div>
+            <label for="disc">Disabilities</label>
+            <input type="text" name="x" value="y" disabled>
+        </div>
+        <br>
+        <div>
+            <label for="pn">PhoneNo:</label>
+            <select name="numprefix" id="" readonly>
+                <option value="+91" readonly>+91</option>
+            </select>
+            <input type="number" name="" id=""> 
+        </div>
+        <br>
+        <br>
+        <button type="submit">submit</button>
+
+    </form>
+</body>
+</html>
