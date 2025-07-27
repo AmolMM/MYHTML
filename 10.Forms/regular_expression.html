@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Registration Form</h1>
+    <form action="main.java">
+        <label for="na">Enter Your Name</label>
+        <input type="text" placeholder="Enter Name" name="name" id="na" pattern="abc"><br><br>
+        <label for="az">Enter letter a-z</label><br>
+        <input type="text" placeholder="Enter letter a-z" name="az" id="az" pattern="[a-z]"><br><br>
+             <label for="azAZ09">Enter letter a-zA-Z0-9</label><br>
+        <input type="text" placeholder="Enter letter a-zA-Z0-9" name="azAZ09" id="azAZ09" pattern="[A-Za-z0-9]{3}"><br><br>
+        <label for="PhoneNo">
+            Enter Phone No
+        </label><br>
+        <input type="number" id="PhoneNo" pattern="[0-9]{10}" placeholder="Enter phone no"><br><br>
+        <input type="email" placeholder="Enter email" pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9-]+\.[A-Za-z]{2,}"><br><br>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
