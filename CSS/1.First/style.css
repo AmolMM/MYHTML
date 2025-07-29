@@ -1,4 +1,7 @@
- h2{
+
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+AU+TAS+Guides&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+h2{
             background-color: lightblue;
             color:black;
             
@@ -10,4 +13,23 @@
 #Heading2
 {
     background-color: palevioletred;
+}
+body{
+    background-color: hsla(1, 90%, 80%,0.5);
+}
+h3{
+    font-size: 30px;
+    /* font-family: Georgia, 'Times New Roman', Times, serif; */
+     font-family: "Playwrite AU TAS Guides", cursive;
+}
+#box{
+    height: 50px;
+    width: 50%;
+    background-color: saddlebrown;
+}
+
+#box2{
+    height: 50VH;
+    width: 50%;
+    background-color: gray;
 }
