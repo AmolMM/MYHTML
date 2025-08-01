@@ -11,3 +11,8 @@
     padding-left: 0px;
     box-sizing: border-box;
 }
+h2{
+    background-color: yellow;
+    align-items: center;
+    text-align: center;
+}
