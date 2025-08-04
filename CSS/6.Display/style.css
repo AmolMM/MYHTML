@@ -1,0 +1,42 @@
+#main{
+    height:60vh;
+    max-width: 50vw;
+    border:none;
+    border-radius: 20px;
+    margin: 10vh auto;
+    padding: 20px;
+    box-shadow: 5px 10px 30px rgb(81, 117, 81);
+}
+.child{
+   
+    /* background-color: wheat; */
+    margin:5px 0px;
+
+    display: inline-block;
+}
+.child1{
+    /* visibility: hidden; */
+    margin: 0px;
+    padding: 0px;
+    width: 50%;
+}
+.child2{
+    width: 30%;
+    height: 100%;
+}
+/* .child3{
+    visibility: hidden;
+} */
+.image{
+    object-fit: cover;
+    height: 100%;
+}
+p{
+    text-align: justify;
+}
+button{
+    padding: 20px 30px;
+    background-color: black;
+    color: aliceblue;
+    border-radius: 20px 0px 20px 0px;
+}

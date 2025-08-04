@@ -1,0 +1,13 @@
+img{
+    height: 200px;
+    /* float: left; */
+}
+p{
+    clear:both;
+}
+figure{
+    background-color: aliceblue;
+    border-radius: 20px;
+    padding: 20px;
+    float: right;
+}
