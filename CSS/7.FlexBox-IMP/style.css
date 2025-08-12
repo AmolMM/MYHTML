@@ -1,0 +1,28 @@
+.parent{
+    width:300px;
+    height: 500px;
+    border-radius: 30px;
+    border-color: aliceblue;
+    background-color: aqua;
+    border: 2px solid red;
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    align-items: center;
+    /* gap: 10px; */
+    flex-wrap: wrap;
+    align-content: space-evenly;
+}
+.child{
+    width:50px;
+    height:50px;
+    border: 1px solid white;
+    background-color: gray;
+    color: white;
+}
+.child1{
+    order:1;
+}
+.child4{
+    order:2;
+}

@@ -1,0 +1,140 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f0f4ff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.container {
+  display: flex;
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  max-width: 700px;
+}
+
+.result-card {
+  background: linear-gradient(to bottom, #5b3df6, #4636d9);
+  color: white;
+  padding: 40px;
+  width: 50%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.result-card .title {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  opacity: 0.9;
+}
+
+.score-circle {
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  width: 130px;
+  height: 130px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.score-circle h1 {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.score-circle p {
+  font-size: 0.9rem;
+  opacity: 0.8;
+}
+
+.result-text {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 20px 0 10px;
+}
+
+.description {
+  font-size: 0.9rem;
+  opacity: 0.8;
+  line-height: 1.4;
+  padding: 0 10px;
+}
+
+.summary-card {
+  padding: 40px;
+  width: 50%;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.summary-card h2 {
+  margin-bottom: 25px;
+  color: #333;
+}
+
+.summary-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 16px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  font-size: 0.95rem;
+  font-weight: 600;
+}
+
+.summary-item i {
+  margin-right: 8px;
+}
+
+.summary-item.reaction {
+  background-color: #ffe6e6;
+  color: #ff5a5a;
+}
+
+.summary-item.memory {
+  background-color: #fff8dc;
+  color: #f7b801;
+}
+
+.summary-item.verbal {
+  background-color: #e0fff6;
+  color: #00b894;
+}
+
+.summary-item.visual {
+  background-color: #eae8ff;
+  color: #6c5ce7;
+}
+
+.continue-btn {
+  margin-top: auto;
+  padding: 12px;
+  border: none;
+  border-radius: 30px;
+  background-color: #303b59;
+  color: white;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.continue-btn:hover {
+  background-color: #1f2944;
+}
