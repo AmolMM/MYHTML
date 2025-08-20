@@ -1,0 +1,40 @@
+#courage{
+    height: 200px;
+    width: 200px;
+    animation: RotateAndMove 3s ease 3;
+    animation-direction: alternate;
+    position: absolute;
+}
+/* @keyframes rotateAndMove{
+from{
+
+}
+to{
+    transform: translateX(200px) translateY(200px) rotate(720deg);
+}
+} */
+@keyframes RotateAndMove{
+    0%{
+        left:0;
+        top:0;
+    }
+    25%{
+        left:80%;
+        top:0%;
+        transform: rotate(720deg);
+    }
+    50%{
+         left:80%;
+        top:80%;
+        transform: rotate(0deg);
+    }
+    75%{
+        left:0%;
+        top:80%;
+        transform: rotate(720deg);
+    }
+    100%{
+         left:0;
+        top:0;
+    }
+}

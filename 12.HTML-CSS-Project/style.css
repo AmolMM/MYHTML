@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playwrite+AU+TAS+Guides&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+/* font-family: "Roboto", sans-serif; */
+*{
+    margin: 0;
+    padding: 0; 
+    box-sizing: border-box; 
+    transition: all 0.5sec ease;
+}
+body{
+    font-size: 16px;
+}
+header{
+   
+    width:100vw;
+    display: flex;
+    justify-content: center;
+}
+nav{
+    margin-top: 10px;
+    width: max-content;
+    padding: 10px 20px;
+    background-color: gray ;
+    border-radius: 20px;
+    position: fixed;
+}
+ul{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    list-style: none;
+    /* text-decoration: none; */
+}
+ul>li>a{
+    text-decoration: none;
+    font-size: 24px;
+    color: wheat;
+}
+ul>li:hover{
+    transform: translateY(-5px);
+}
+a:hover{
+    color: green;
+}
+section{
+    max-width: 1280px;
+    margin:auto;
+    box-sizing: border-box;
+    margin-bottom: 0;
+}
+#banner{
+    /* height: 80vh; */
+    margin-top: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 0;
+    margin-bottom: 50px;
+}
+.left{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.left>h2{
+font-size: 72px;
+}
+.tagline{
+    font-size: 24px;
+    background-image: linear-gradient(to right,orange,blue);
+    background-clip: text;
+    color: transparent;
+    font-weight: bold;
+}
+.desc{
+    text-align: justify;
+}
+.buttons>button{
+    padding: 10px 20px; 
+} 
+.buttons>button:nth-child(1)
+{
+    background-color: black;
+    color: white;
+    border-radius: 20px 0px 20px 0px;
+    text-decoration: none;
+}
+.buttons>button:nth-child(1)>a
+{
+    color: white;
+    text-decoration: none;
+}
+.buttons>button:nth-child(2)
+{
+    background-color:transparent;
+    border: none;
+}
+.buttons>button:nth-child(2)>a{
+   color: black;
+   text-decoration: 2px solid black underline;
+   font-weight: bold;
+
+}
+.right{
+border-radius: 50% 50% 0px 0px;
+/* border: 5px solid green;
+margin: 0px;
+padding: 0px; */
+}
+.right>img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+#about{
+    display: flex;
+    width: 100%;
+    gap:10%;  
+    margin-top: 0;
+    padding-top: 0;  
+}
+.eduction{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    gap:20px;
+    margin: 10px;
+    padding: 10px;
+}
+.degree{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    border-radius: 20px;
+    box-shadow: 5px 10px 15px green;
+}
+.skills{
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+}
+#skills{
+    display: flex;
+    flex-wrap: wrap;
+    gap:20px;
+}
+
+#skills>img{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+}
+#skills>img:hover{
+    transform: translateY(-5px);
+}
+.heading{
+    text-align: center;
+    font-size: 50px;
+    box-shadow: 5px 10px 15px 0 grey;
+    margin: 10px 10px 10px 10px;
+    border-radius: 10px;
+    text-shadow:
+      1px 1px 0 #ccc,
+      2px 2px 0 #bbb,
+      3px 3px 0 #aaa,
+      4px 4px 0 #999,
+      5px 5px 0 #888;
+}
+#projects{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap:20px;
+    margin: auto;
+    max-width: 1280px;
+}
+.project{
+    box-shadow: 5px 10px 15px grey;
+    padding: 20px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.project>h2{
+    font-size: 28px;
+}
+.project>p{
+    color: rgb(200, 195, 195);
+}
+.project>button{
+    background-color: black;
+    color: white;
+    width: max-content;
+    border-radius: 20px 0px 20px 0px;
+    padding: 10px 20px;
+}
+.project>button>a{
+    text-decoration: none;
+    color: white;
+}
+.project>img{
+    width: 100%;
+    object-fit: contain;
+}
+/****************************************************************************************************************/
+/* mobile 360-576px*/
+@media (max-width:478px){
+#banner{
+    flex-direction: column;
+    margin-top: 20px;
+    padding: 0px 20px ;
+
+}
+nav>a{
+    font-size: 10px;
+}
+ul>li>a{
+    font-size: 18px;
+}
+a{
+    font-size: 16px;
+}
+.left{
+    align-items: center;
+    gap:10px;
+    padding: 10px;
+}
+.left>h2{
+font-size: 32px;
+align-items: center;
+}
+
+.tagline{
+    font-size: 18px;
+
+}
+}
+/* mobile-landscape 576-768*/
+@media (min-width:576px) and (max-width:768px){
+
+}
+/* tablet screen 769-1024px*/
+@media (min-width:769px) and (max-width:1024px){
+
+}
+/* desktop,laptops 1024-1280*/
+@media (min-width:1024px) and (max-width:1280px){
+
+}
+

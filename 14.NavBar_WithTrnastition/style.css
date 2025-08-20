@@ -1,0 +1,32 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+header{
+    /* width:100vw; */
+    display: flex; 
+    justify-content: center;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+    
+}
+nav>ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:10px;
+    border-radius: 20px;
+    background-color: gray;
+    font-size: 24px;
+    box-sizing: border-box;
+    width: max-content;
+    margin: 20px;
+    padding: 10px 20px;
+} 
+
+
+

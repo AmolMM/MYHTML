@@ -1,0 +1,71 @@
+.gp p{
+    color: blue;
+}
+.gp>p{
+    color: red;
+}
+.gp+p{
+    color: green;
+}
+
+.p:hover,#box:hover
+{
+    background-color: pink;
+    transform: perspective(1px) translateY(-8px);
+    transition: transform 0.2s;
+}
+#box{
+    height: 100px;
+    width: 100px;
+    background-color: lime;
+    border: 1rem solid black;
+    border-radius: 25%;
+    justify-content: center ;
+    align-items: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.p:visited
+{
+    transition: color 0.3s, background-color 0.3s;
+    color: purple;
+    background-color: #f0e6ff;
+}
+a{
+    text-decoration: none;
+}
+#inp:focus {
+    /* outline: 2px solid orange; */
+    /* outline-offset: 2px; */
+    box-shadow: 0 0 10px 1px orange;
+    transition: outline 0.2s, box-shadow 0.2s;
+}
+.child{
+    height: 50px;
+    width: 50px;
+    margin:2px;
+    background-color: green;
+}
+.child:first-child {
+    background-color: red;
+}
+.child:nth-of-type(even)
+{
+    background-color: black;
+}
+
+#para::before{
+    content: '\201c';
+        font-size: 48px;
+        color:red;
+}
+#para::first-letter{
+    font-size: 48px;
+    color:red;
+}
+#para::after{
+   content: '\201d';
+        font-size: 48px;
+        color:red;
+}
