@@ -27,7 +27,8 @@ nav{
     margin-top: 10px;
     width: max-content;
     padding: 10px 20px;
-    background-color: gray ;
+    /* background-color: gray ; */
+    background-color: rgb(21, 21, 21);
     border-radius: 20px;
     position: fixed;
 }
@@ -44,10 +45,11 @@ ul>li>a{
     color: wheat;
 }
 ul>li:hover{
-    transform: translateY(-5px);
+    /* transform: translateY(-5px); */
+    transform: scale(1.2);
 }
 a:hover{
-    color: green;
+    color: rgb(120, 122, 249);
 }
 section{
     max-width: 1280px;
@@ -259,7 +261,7 @@ padding: 0px; */
     box-sizing: border-box;
     border-radius: 20px;
     box-shadow: 10px 5px 15px 0px green;
-     margin: 50px auto;
+    margin: 50px auto;
 }
 .fa-brands{
     font-size: 32px;
@@ -272,12 +274,13 @@ padding: 0px; */
 footer{
     text-align: center;
     background-color: black;
+
     color: white;
     padding: 10px 0px;
     position: fixed;
     right: 0;
     left: 0;
-    bottom: 0;
+    bottom: 0px;
 }
 .floating-whatsapp img{
     height: 100px;
@@ -285,6 +288,16 @@ footer{
     bottom:0;
     right: 0;
     animation: bounce 0.2s ease infinite alternate;
+}
+.space{
+    margin-top: 50px;
+    color: red;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    box-shadow: 10px 15px 20px 0px;
+    margin-bottom: 50px;
+    z-index: -1;
 }
 /****************************************************************************************************************/
 /* mobile 360-576px*/
