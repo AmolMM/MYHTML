@@ -1,0 +1,81 @@
+const cars=
+[
+    {
+        "id" : 1,
+        "manufacturer": "Porsche",
+        "model": 911,
+        "price": 135000,
+        "wiki": "http://en.wikipedia.org/wiki/Porsche_997",
+        "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/2004_silver_Porsche_911_Carrera_type_997.jpg/280px-2004_silver_Porsche_911_Carrera_type_997.jpg"
+    },{
+        "id" : 2,
+        "manufacturer": "Nissan",
+        "model": "GT-R",
+        "price": 80000,
+        "wiki":"http://en.wikipedia.org/wiki/Nissan_Gt-r",
+        "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Nissan_GT-R_01.JPG/280px-Nissan_GT-R_01.JPG"
+    },{
+        "id" : 3,
+        "manufacturer": "BMW",
+        "model": "M3",
+        "price": 60500,
+        "wiki":"http://en.wikipedia.org/wiki/Bmw_m3",
+        "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/2008-2010_BMW_M3_%28E90%29_sedan_04.jpg/280px-2008-2010_BMW_M3_%28E90%29_sedan_04.jpg"
+    },{
+        "id" : 4,
+        "manufacturer": "Audi",
+        "model": "S5",
+        "price": 53000,
+        "wiki":"http://en.wikipedia.org/wiki/Audi_S5#Audi_S5",
+        "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/2009_Audi_S5_%288F7_MY10%29_convertible_%282010-07-10%29_01.jpg/280px-2009_Audi_S5_%288F7_MY10%29_convertible_%282010-07-10%29_01.jpg"
+    },
+        {
+        "id" : 1,
+        "manufacturer": "Porsche",
+        "model": 911,
+        "price": 135000,
+        "wiki": "http://en.wikipedia.org/wiki/Porsche_997",
+        "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/2004_silver_Porsche_911_Carrera_type_997.jpg/280px-2004_silver_Porsche_911_Carrera_type_997.jpg"
+    },{
+        "id" : 2,
+        "manufacturer": "Nissan",
+        "model": "GT-R",
+        "price": 80000,
+        "wiki":"http://en.wikipedia.org/wiki/Nissan_Gt-r",
+        "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Nissan_GT-R_01.JPG/280px-Nissan_GT-R_01.JPG"
+    },{
+        "id" : 3,
+        "manufacturer": "BMW",
+        "model": "M3",
+        "price": 60500,
+        "wiki":"http://en.wikipedia.org/wiki/Bmw_m3",
+        "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/2008-2010_BMW_M3_%28E90%29_sedan_04.jpg/280px-2008-2010_BMW_M3_%28E90%29_sedan_04.jpg"
+    },{
+        "id" : 4,
+        "manufacturer": "Audi",
+        "model": "S5",
+        "price": 53000,
+        "wiki":"http://en.wikipedia.org/wiki/Audi_S5#Audi_S5",
+        "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/2009_Audi_S5_%288F7_MY10%29_convertible_%282010-07-10%29_01.jpg/280px-2009_Audi_S5_%288F7_MY10%29_convertible_%282010-07-10%29_01.jpg"
+    }
+]
+
+const carsMain=document.getElementById('cars');
+function displaycars(){
+    cars.forEach(function (ele,ind)
+    {
+        const carDiv=document.createElement('div');
+        const carIMage=document.createElement('img');
+        carIMage.src=ele.img
+        // carIMage.style.width = '280px';
+        // carIMage.style.height = '280px';
+        // carIMage.style.objectFit = 'contain';
+        const carTitle=document.createElement('h2');
+        carTitle.textContent=ele.manufacturer
+        carDiv.append(carIMage,carTitle);
+        carsMain.appendChild(carDiv);  
+    })
+    
+    
+}
+displaycars()
