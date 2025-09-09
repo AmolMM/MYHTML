@@ -13,6 +13,7 @@ for(let i=0;i<=10000;i++)
 }
 let c=0;
 
+
 function incr(){
     c=c+1;
     let ctr=document.getElementById('counter');
